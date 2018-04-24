@@ -1,0 +1,26 @@
+{
+  "name": "directive-x",
+  "version": "0.1.0",
+  "description": "Directives for JSX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bukharim96/directive-x.git"
+  },
+  "keywords": [
+    "JSX",
+    "directives",
+    "react",
+    "reactjs",
+    "react-native"
+  ],
+  "author": "bukharim96 <bukharim96@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bukharim96/directive-x/issues"
+  },
+  "homepage": "https://github.com/bukharim96/directive-x#readme"
+}
