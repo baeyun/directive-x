@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/bukharim96/directive-x/issues"
   },
-  "homepage": "https://github.com/bukharim96/directive-x#readme"
+  "homepage": "https://github.com/bukharim96/directive-x#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0"
+  }
 }
