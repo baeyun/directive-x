@@ -23,6 +23,9 @@
     "url": "https://github.com/bukharim96/directive-x/issues"
   },
   "homepage": "https://github.com/bukharim96/directive-x#readme",
+  "dependencies": {
+    "babel-plugin-syntax-jsx": "^6.18.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0"
   }
