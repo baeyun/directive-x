@@ -14,6 +14,11 @@ module.exports = function (babel) {
 				if (!attrs.length)
 					return
 
+				if (attrs.includes('xGet'))
+					path.replaceWith(
+						require('./xGet')(t, path, attrs)
+					)
+
 				if (attrs.includes('xRepeat'))
 					path.replaceWith(
 						require('./xRepeat')(t, path, attrs)
