@@ -3,6 +3,10 @@
 module.exports = function (t, path, attrs) {
 	var openingEl = path.node.openingElement,
 		compIdentifier = t.JSXIdentifier(openingEl.name.name),
+		props = openingEl.attributes.filter(
+			prop => prop.name.name !== 'xRepeat'
+		),
+		children = path.node.children,
 		directive = openingEl.attributes[attrs.findIndex(
 			attr => attr === 'xRepeat')
 		],
@@ -23,11 +27,8 @@ module.exports = function (t, path, attrs) {
 							toRepIdentifier.object,
 							toRepIdentifier.property,
 							toRepIdentifierComputed
-						),
-		children = path.node.children,
-		props = openingEl.attributes.filter(
-			prop => prop.name.name !== 'xRepeat'
-		)
+						)
+		
 	
 	var returnStatement = t.JSXElement(
 			t.JSXOpeningElement(
