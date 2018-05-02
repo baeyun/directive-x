@@ -27,10 +27,8 @@ module.exports = function (t, path, attrs) {
 							toRepIdentifier.object,
 							toRepIdentifier.property,
 							toRepIdentifierComputed
-						)
-		
-	
-	var returnStatement = t.JSXElement(
+						),
+		returnStatement = t.JSXElement(
 			t.JSXOpeningElement(
 			  compIdentifier,
 			  props
