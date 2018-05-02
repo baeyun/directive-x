@@ -8,18 +8,21 @@ module.exports = function (babel) {
 		visitor: {
 			JSXElement(path) {
 				var attrs = path.node.openingElement.attributes.map(
-						attr => attr.name.name
-					),
-					replacement
+					attr => attr.name.name
+				)
 				
 				if (!attrs.length)
 					return
 
 				if (attrs.includes('xRepeat'))
-					path.replaceWith( require('./xRepeat')(t, path, attrs) )
+					path.replaceWith(
+						require('./xRepeat')(t, path, attrs)
+					)
 
 				if (attrs.includes('xIf'))
-					path.replaceWith( require('./xIf')(t, path, attrs) )
+					path.replaceWith(
+						require('./xIf')(t, path, attrs)
+					)
 			}
 		}
 	}
