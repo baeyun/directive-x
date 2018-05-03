@@ -18,13 +18,11 @@ module.exports = function (babel) {
 					path.replaceWith(
 						require('./xGet')(t, path, attrs)
 					)
-
-				if (attrs.includes('xRepeat'))
+				else if (attrs.includes('xRepeat'))
 					path.replaceWith(
 						require('./xRepeat')(t, path, attrs)
 					)
-
-				if (attrs.includes('xIf'))
+				else if (attrs.includes('xIf'))
 					path.replaceWith(
 						require('./xIf')(t, path, attrs)
 					)
