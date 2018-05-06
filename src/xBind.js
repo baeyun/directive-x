@@ -80,4 +80,6 @@ module.exports = function (t, path, attrs) {
 		)
 		
 		// get rid of xBind prop &&/|| update events
+
+		return path // doing nothing...just for now
 }
