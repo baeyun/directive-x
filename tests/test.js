@@ -1,7 +1,8 @@
 let fs = require('fs'),
 		{ transform } = require('babel-core')
 
-let fileName = process.argv[2] // get from cmd args
+let fileNameArg = process.argv[2], // get from cmd args
+	fileName = fileNameArg.includes('.js') ? fileNameArg : fileNameArg + '.js'
 
 // read the code from this file
 fs.readFile(fileName, function(err, data) {
