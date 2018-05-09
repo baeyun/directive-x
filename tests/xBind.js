@@ -13,7 +13,7 @@ class Button extends Component {
       
       return(
         <View xBind onSubmit={this.submit(blablabla)} onClick={(e) => this.handleClick(promptMsg)}>
-            <Text xBind children="Click me" />
+            <Text xBind={SomeClass} onHover={this.displayTooltip(e, tooltipMsg)} children="Click me" />
         </View>)
     }
 }
