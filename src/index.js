@@ -26,9 +26,9 @@ module.exports = function (babel) {
 					path.replaceWith(
 						require('./xRepeat')(t, path, attrs)
 					)
-				else if (attrs.includes('xIf'))
+				else if (attrs.includes('xShowIf'))
 					path.replaceWith(
-						require('./xIf')(t, path, attrs)
+						require('./xShowIf')(t, path, attrs)
 					)
 			}
 		}
