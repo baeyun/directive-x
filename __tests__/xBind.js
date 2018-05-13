@@ -1,19 +1,13 @@
 class Button extends Component {
-    constructor(props, stuff) {
-      super(props)
-    }
+  handleClick(e) {/*...*/}
+
+  handleHover(e) {/*...*/}
   
-  	handleClick(e, promptMsg='Hello, World!') {
-      e.preventDefault()
-      alert(promptMsg)
-    }
-  
-	render() {
-      let { props: {promptMsg, tooltipMsg} } = this
-      
-      return(
-        <View xBind onSubmit={this.submit(blablabla)} onClick={(e) => this.handleClick(promptMsg)}>
-            <Text xBind={SomeClass} onHover={this.displayTooltip(e, tooltipMsg)} children="Click me" />
-        </View>)
-    }
+  render() {
+    return(
+      <View xBind onClick={(e) => this.handleClick(e)}>
+        <Text xBind={SomeComp} onHover={this.handleHover} children="Click me" />
+      </View>
+    )
+  }
 }
