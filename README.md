@@ -1,4 +1,12 @@
+<p align="center">
+  <img height="170px" src="https://raw.githubusercontent.com/bukharim96/directive-x/master/resources/directive-x-logo-1_37.5percent.png">
+</p>
+
 <h1 align="center">Directive-X</h1>
+
+<p align="center">
+  <small>Directives for JSX</small>
+</p>
 
 Directive-X is a JSX extension that simplifies coding in JSX. It uses Babel to transpile its '*xProps*' (that manipulate JSX element structures).
 
